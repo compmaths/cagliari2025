@@ -1,1 +1,2 @@
-# mathmodel
+# SEAEUSchool.github.io
+Web page
