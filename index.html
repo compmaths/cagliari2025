@@ -1,475 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <title>Cagliari School on Mathematical Modeling</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-h1, h2, h3, h4 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 1px;
-}
-.myNavbar {
-  margin: 64;
-  display: inline-block;
-  letter-spacing: 2px;
-}
-</style>
-
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>web.draft_BIP.withcourses.Cagliari_1-4-2025</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 </head>
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar" style="letter-spacing:0px";>
-    <a href="#home" class="w3-bar-item w3-button w3-large" style="letter-spacing:2px">Cagliari School on Computational Mathematics</a>
-    <!-- Right-sided navbar links -->
-    <span class="w3-right w3-hide-small w3-normal">
-      <a href="#overview" class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-info-circle">&nbsp;</i>Overview</span></a>
-      <a href="#courses"  class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-gear">&nbsp;</i>Courses</span></a>
-      <a href="#lectures" class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-user">&nbsp;</i>Lectures</span></a>
-      <a href="#schedule" class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-th">&nbsp;</i>Schedule</span></a>
-      <a href="#registration" class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-check-square-o">&nbsp;</i>Registration</span></a>
-      <a href="#contact"  class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-envelope">&nbsp;</i> Contact</span></a>
-    </span>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button">Overview</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Courses</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Lectures</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Scedule</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-</nav>
-
-<!-- <header class="w3-display-container w3-content w3-wide " style="max-width:1600px;min-width:600px" id="home"> -->
-<header class="w3-display-container w3-content w3-wide " style="max-width:1600px" id="home">
-  <img class="w3-image" src="https://raw.githubusercontent.com/compmaths/cagliari2025/refs/heads/main/img/Cagliari.jpeg" alt="Cagliari view" width="1600" height="200"> 
+<header id="title-block-header">
+<h1 class="title"><p>ERASMUS Blended Intensive Program</p></h1>
 </header>
-
-<!-- Dive into modeling -->
-<div class="w3-container" style="padding:24px 32px">
-  <!-- <h3 class="w3-center">ABOUT THE COMPANY</h3> -->
-  <h4 class="w3-center">Dive into mathematical and computational modeling</h4>
-  <!-- <p class="w3-center w3-large">Dive into mathematical and computational modeling!</p> -->
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-graduation-cap w3-margin-bottom w3-jumbo w3-center"></i>
-      <!-- <p class="w3-large">Responsive</p> -->
-      <p>Oriented to Master, PhD students and young researchers in Mathematics, Science or Engineering.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-calendar w3-margin-bottom w3-jumbo"></i>
-      <!-- <p class="w3-large">Design</p> -->
-      <p></p>
-      Erasmus Blended Intensive Program:<br> 
-      <!-- Skills Section -->
-      <div class="w3-third" style="padding-top:0.6em" >
-          July. 2025: 
-      </div>
-      <div class="w3-twothird" style="text-align:left; padding-left:5px" >
-        14-18 July (online),<br/>
-        21-25 (Cagliari, Italy).
-      </div>
-      <!---->
-      <!-- <div class="w3-center" style="margin-left:40px margin-top:0px"> -->
-      <!---->
-      <!-- <table><tr><td rowspan="2">Sept 2004:</td><td>2-6 Sept (online)</td></tr>  -->
-      <!--       <tr><td> 9-13 (Split, Croatia).</td></tr></table></p> -->
-      <!-- </div> -->
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-gears w3-margin-bottom w3-jumbo"></i>
-      <!-- <p class="w3-large">Passion</p> -->
-      <p>Prerequisites: Mathematics and computer programming skills.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <!-- <p class="w3-large">Passion</p> -->
-      <p>3 courses &amp; 5 lectures in a friendly environment for enjoying  computational mathematics and applications.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Overview -->
-<div class="w3-container w3-light-grey" style="padding:32px 32px" id="overview">
-      <img class="w3-image w3-round-large" 
-      src="https://raw.githubusercontent.com/compmaths/cagliari2025/refs/heads/main/img/Cagliari.jpeg" 
-      style="float:left; width:30%; margin-right:15px; margin-bottom:15px "
-      alt="Overview">
-      <h3>Overview</h3>
-      <p>This school is designed for young students, up to master and doctorate level, seeking to acquire skills in the <b>latest trends</b> in <b>mathematical</b> and <b>computational modeling</b>. We place a strong emphasis on practical applications in science and engineering, with a focus on modeling spatiotemporal variations of physical quantities using partial differential equations (PDEs) and related topics such as <b>finite element methods</b>, <b>neural networks</b> and <b>numerical optimization</b>, playing a vital role today in fields like <b>deep learning</b>.</p>
-      <p>The school is organized into <b>three courses</b>. Two courses will cover the widely used finite element method (FEM) and other emerging techniques such as physically informed neural networks (PINN) for computing numerical solutions of PDEs. The third course will focus on numerical methods for constrained and unconstrained optimization. In these courses, we introduce fundamental mathematical structures, provide illustrative examples, review algorithms, program them using high-level open-source tools, and post-process the solutions for high-quality plotting.</p>
-      <p>The essential mathematical and computer skills will be standardized in <b>introductory online sessions</b>, with expert proffesors in the field overseeing the entire learning process. The courses will be complemented by <b>five lectures</b> aimed at introducing recent research directions relevant to the field.</p>
-      <h6 id="methodology">Methodology</h6>
-      <p>The school begins with a phase dedicated to homogenizing the students’ knowledge to help them reach a basic level before the classroom courses begin to develop in Split. It will be designed as <b>5 online days</b> where students will be able to access material specifically prepared for them to acquire basic math and computer skills. During these days they will have the support and tutoring of the curses instructors, through video meetings and forums in a virtual campus.</p>
-      <p>In the <b>second week</b>, the School will be held physically on the premises of the <b>University of Split</b>. It will consist on three courses where theoretical lectures will be given and numerous examples, algorithms and exercises will be reviewed. In computer classes, students will be provided with the necessary software to implement the algorithms and analyze the results. The courses will be complemented with lectures where invited professors will stimulate the curiosity of the students, stowing recent research topics related to computational mathematics.</p>
-      <p>After the end of the classes in Split, the students interested in receiving ECTS credits will submit a final work in small groups related to the school topics. For this, they will be assisted in a final tutoring session.</p>
-
-      <h6 id="evaluation">Credit Recognition</h6>
-      <p>Participants who complete the course will receive <b>3 ECTS credits</b>.  Evaluations for students interested in credit recognition will be based on daily attendance to the school and a on final offline group work. 
-      <!-- This final work will be related to the school topics and will be delivered after the end of the classroom sessions.-->
-      </p>
-
-      <img class="w3-image w3-round-large" 
-      src="https://raw.githubusercontent.com/compmaths/cagliari2025/refs/heads/main/img/Cagliari.jpeg" 
-      style="float:right; width:30%; margin-left:15px; margin-bottom:15px"
-      alt="Dormitory">
-
-      <h6 id="travel-and-accommodation">Travel and Accommodation</h6>
-      <p>The city of Split, Croatia, is served by an international airport which is located approximately 20 km from the city center of Split, on the west side of Kaštela Bay. 
-Regular taxis at Split Airport are available during the airport’s operating hours, with the average cab fare to the center of Split being about 30 euros.
-Other options for travelling include shuttle bus (Pleso Prijevoz) and local bus, with respective costs of 6€ and 2.5€.</p>
-      <p>The School will provide students with up to 20 dormitory rooms in the university residence located on the university campus, a 5-minute walk from the Faculty of Science, where the activities will take place. Breakfast and lunch are included.</p>
-      <h6 id="erasmus-funding">Erasmus Funding</h6>
-      <p>Up to 20 Students coming either from a SEA-EU University or from any EU Member State or third country associated to the Erasmus+ program can apply for funding through Blended Intensive Program (BIP). This will allow them to get support to attend the classroom week in Split.</p>
-
-      <p style="margin-top:64px"><a href="#registration" class="w3-button w3-black"><i class="fa fa-arrow-down w3-margin-right"></i>To registration and deadlines section</a></p>
-</div>
-
-
-<!-- Courses -->
-<div class="w3-container" style="padding:32px 32px" id="courses">
-  <h2 id="courses">Courses</h2>
-
-  <h6 id="course-1.-introduction-to-partial-differential-equations-examples-and-numerical-resolution-by-the-finite-element-method"><b>Course 1</b>. Introduction to partial differential equations: examples and numerical resolution by the finite element method</h6>
-  <p><em>Organizer &amp; Speaker:</em> <strong>XXXXX</strong> (Universidad de XXXXX)</p>
-  <p><em>Classroom time:</em> <strong></strong> 10 hours</p>
-  <p><em>Topics:</em> <strong></strong></p>
-  <ol>
-    <li>Basic notions: differential operators and integral identities.</li>
-    <li>Some PDEs arising in physics and engineering.</li>
-    <li>Variational formulation. Functional spaces. The finite element method.</li>
-  </ol>
-
-  <img class="w3-image w3-round-large" 
-       src="https://raw.githubusercontent.com/compmaths/cagliari2025/refs/heads/main/img/Cagliari.jpeg" 
-       style="float:right; width:33%; margin-left:15px; margin-bottom:15px"
-       alt="Palace atrio">
-
-  <hr/>
-  <h6 id="course-2.-physics-informed-neural-networks-introduction-and-case-study-on-fluid-dynamics"><b>Course 2</b>. XXXX</h6>
-  <p><em>Organizers &amp; Speakers:</em> <strong>J. Rafael Rodríguez Galván</strong> (Universidad de Cádiz)</p>
-  <p><em>Classroom time:</em> <strong></strong> 10 hours</p>
-  <p><em>Topics:</em> <strong></strong></p>
-  <ol>
-    <li>Introduction and mathematical foundations of neural networks (NN). Fundamentals, architectures, activation and loss functions, differentiation and chain rule for functions of several variables</li>
-    <li>Training and optimization in NN. Backpropagation, optimization algorithms</li>
-    <li>Computational aspects and software libraries. Significance of hardware acceleration and parallelization for efficient training</li>
-    <li>A perspective on neural networks for PDE models: physics informed neural networks (PINN). PINN software libraries. Modeling diffusion and convection for linear and non-linear processes</li>
-    <li>Governing equations in fluid dynamics. The finite element method (FEM) for approximating non-turbulent flows</li>
-    <li>PINN in fluid dynamics: comparing to FEM, exploring the pros and cons in a challenging case with applications to real-world scenarios</li>
-  </ol>
-
-  <hr/>
-  <h6 id="course-3.-numerical-optimization"><b>Course 3</b>. XXXXX</h6>
-  <p><em>Organizer &amp; Speaker:</em> <strong>XXXX</strong> (University of XXXX)</p>
-  <p><em>Classroom time:</em> <strong></strong> 6 hours lectures, 4 hours exercises</p>
-  <p><em>Topics:</em> <strong></strong></p>
-  <ol>
-    <li>Numerical methods for unrestricted optimization: Newton, steepest decent, Armijo step length control</li>
-    <li>Restricted Optimization Problems: equality and inequality constraints, types of restricted optimization problems</li>
-  </ol>
-</div>
-
-<!-- Lectures -->
-<div class="w3-container w3-light-grey" style="padding:32px 32px" id="lectures">
-  <img class="w3-image w3-round-large" 
-       src="https://raw.githubusercontent.com/compmaths/cagliari2025/refs/heads/main/img/Cagliari.jpeg" 
-       style="float:left; width:30%; margin-right:15px; margin-bottom:15px"
-       alt="Sphinx in Diocletian's Palace">
-  <p>
-  <h2 id="lectures">Lectures</h2>
-
-  <h6><b>Lecture 1</b>. XXXX</h6>
-  <p><em>XXX</em></p>
-  <p> 
-  In this lecture, we consider the incompressible Navier-Stokes equations with the forcing term assumed to be (non-linearly) dependent on the velocity field. Bla bla  </p>
-  <hr/>
-  <h6><b>Lecture 2</b>. XXXX</h6>
-  <p><em>XXX XXX</em></p>
-  <p/> 
-  XAjjajgkj akñgjajajhjhkj hkjhaj hjhlj
-  <hr/>
-
-</div>
-
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>Lecturers and organizers</h2>
-
-<div class="w3-row" style="w3-padding-small"><br>
-
-  <div class="w3-quarter w3-padding-small" >
-    <img src="" alt="XXX" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h6>XXX</h6>
-    <p>XXX </p>
-  </div>
-
-  <div class="w3-quarter w3-padding-small">
-    <img src="" 
-         alt="Rafael Rguez. Galván" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h6>J. Rafael Rodríguez Galván</h6>
-    <p>Universidad de Cádiz, Spain</p>
-  </div>
-
-  <div class="w3-quarter w3-padding-small">
-    <img src="" 
-         alt="XXXX" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h6>M. Victoria Redondo Neble</h6>
-    <p>Universidad de Cádiz, Spain</p>
-  </div>
-
-</div>
-
-<div class="w3-row"><br>
-
-  <div class="w3-third w3-padding-small">
-    <img src="" 
-         alt="" style="width:35%" class="w3-circle w3-hover-opacity">
-    <h6>Daniel Acosta Soba</h6>
-    <p>Universidad de Cádiz, Spain</p>
-  </div>
-  <div class="w3-quarter"></div>
-</div>
-
-</div>
-
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-32">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">=&nbsp;5</span>
-    <br>Universities from the SEA-EU alliance
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">=&nbsp;4&nbsp;+&nbsp;5</span>
-    <br>Speakers in courses + lectures
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">=&nbsp;5&nbsp;+&nbsp;5</span>
-    <br>Online + face-to-face days
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">&#x2265;&nbsp;20</span>
-    <br>Tutored hours of computer practice exercises 
-  </div>
-</div>
-
-<!-- Schedule Section -->
-<div class="w3-container" style="padding:64px 32px" id="schedule">
-  <h2>Schedule</h2>
-
-  <div class="w3-row-padding" style="margin-top:32">
-    <h5 id="schedule-for-online-introduction">Online Introduction Week (September 2-6 2024)</h5>
-    <ul>
-      <li><p><strong>Monday 2</strong>, 9:00h. Opening (video conference). Introduction to Course 1 (video conference).<br />
-        10:00h <em>XXX</em>. Individual work, tutored in forums on the virtual campus</p></li>
-      <li><p><strong>Tuesday 3</strong>, 9:00h. Introduction to Course 2 (video conference). <em>J. Rafael Rodríguez Galván &amp; M. Victoria Redondo Neble</em>. Individual work, tutored in forums on the virtual campus</p></li>
-      <li><p><strong>Wednesday 4</strong>, 9:00h. Introduction to Course 3 (video conference). <em>XXX</em>. Individual work, tutored in forums on the virtual campus</p></li>
-      <li><p><strong>Thursday 5</strong> and <strong>Wednesday 6</strong>. Guided exercises.</p></li>
-    </ul>
-
-    <h5 style="padding:16x 0px" id="schedule-for-classroom-sessions">Schedule for Classroom Sessions (September 9-13 2024)</h5>
-    <img src="" 
-         alt="Schedule" class="w3-image" 
-         style="opacity: 0.85; width:100%;">
-
-    <h5 style="padding:16x 0px" id="schedule-for-evaluation">Schedule for Evaluation</h5>
-    Students interested in receiving ECTS credits must submit a final project before Friday, 20th September, 2024. The project may be done individually or in small groups. 
-  </div>
-
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6 w3-padding-large">
-    <h2>Topics</h2>
-      <p>An insight of mathematical and computational tools for simulation of models from Science and Engineering, specifically those which are written as PDE.</p>
-      <p>With a first course on the finite element method (FEM) for numerical approximation of PDE, 
-      a second one on Artificial Intelligence for learning solutions to PDE, in particular by delving into physically informed neural networks (PINN),
-      and a third course on numerical methods for constrained and unconstrained optimization.</p> 
-    </div>
-    <div class="w3-col m6 w3-padding-large">
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Computer Simulation of PDE Models</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:40%">40%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-user w3-margin-right"></i>Artifical Intelligence</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:27%">27%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Numerical optimization</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:33%">33%</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Registration Section -->
-<div class="w3-container" style="padding:32px 32px" id="registration">
-  <h2>Registration</h2>
-  <ul>
-	  <li><b>Application deadline</b>: <b>June 10</b>, 2024.
-	  <li><b>Confirmation of acceptance</b>: <b>June 11</b>, 2024.
-  </ul>
-  <p>Please, complete the following form <i>before the application deadline</i> (in case you are unable to visualize it correctly, you can complete it through <a href="https://forms.gle/YaACBKernZHtc7aN7" style="color:blue;">this link</a>):</p>
-
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQp5VqaDm8re09khbAnDvmha64NE64mUhkTrRwA8EO4wsO7w/viewform?embedded=true" width="640" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
-
-<!-- Pricing Section -->
-<!-- <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing"> -->
-<!--   <h3>PRICING</h3> -->
-<!--   <p class="w3-large">Choose a pricing plan that fits your needs.</p> -->
-<!--   <div class="w3-row-padding" style="margin-top:64px"> -->
-<!--     <div class="w3-third w3-section"> -->
-<!--       <ul class="w3-ul w3-white w3-hover-shadow"> -->
-<!--         <li class="w3-black w3-xlarge w3-padding-32">Basic</li> -->
-<!--         <li class="w3-padding-16"><b>10GB</b> Storage</li> -->
-<!--         <li class="w3-padding-16"><b>10</b> Emails</li> -->
-<!--         <li class="w3-padding-16"><b>10</b> Domains</li> -->
-<!--         <li class="w3-padding-16"><b>Endless</b> Support</li> -->
-<!--         <li class="w3-padding-16"> -->
-<!--           <h2 class="w3-wide">$ 10</h2> -->
-<!--           <span class="w3-opacity">per month</span> -->
-<!--         </li> -->
-<!--         <li class="w3-light-grey w3-padding-24"> -->
-<!--           <button class="w3-button w3-black w3-padding-large">Sign Up</button> -->
-<!--         </li> -->
-<!--       </ul> -->
-<!--     </div> -->
-<!--     <div class="w3-third"> -->
-<!--       <ul class="w3-ul w3-white w3-hover-shadow"> -->
-<!--         <li class="w3-red w3-xlarge w3-padding-48">Pro</li> -->
-<!--         <li class="w3-padding-16"><b>25GB</b> Storage</li> -->
-<!--         <li class="w3-padding-16"><b>25</b> Emails</li> -->
-<!--         <li class="w3-padding-16"><b>25</b> Domains</li> -->
-<!--         <li class="w3-padding-16"><b>Endless</b> Support</li> -->
-<!--         <li class="w3-padding-16"> -->
-<!--           <h2 class="w3-wide">$ 25</h2> -->
-<!--           <span class="w3-opacity">per month</span> -->
-<!--         </li> -->
-<!--         <li class="w3-light-grey w3-padding-24"> -->
-<!--           <button class="w3-button w3-black w3-padding-large">Sign Up</button> -->
-<!--         </li> -->
-<!--       </ul> -->
-<!--     </div> -->
-<!--     <div class="w3-third w3-section"> -->
-<!--       <ul class="w3-ul w3-white w3-hover-shadow"> -->
-<!--         <li class="w3-black w3-xlarge w3-padding-32">Premium</li> -->
-<!--         <li class="w3-padding-16"><b>50GB</b> Storage</li> -->
-<!--         <li class="w3-padding-16"><b>50</b> Emails</li> -->
-<!--         <li class="w3-padding-16"><b>50</b> Domains</li> -->
-<!--         <li class="w3-padding-16"><b>Endless</b> Support</li> -->
-<!--         <li class="w3-padding-16"> -->
-<!--           <h2 class="w3-wide">$ 50</h2> -->
-<!--           <span class="w3-opacity">per month</span> -->
-<!--         </li> -->
-<!--         <li class="w3-light-grey w3-padding-24"> -->
-<!--           <button class="w3-button w3-black w3-padding-large">Sign Up</button> -->
-<!--         </li> -->
-<!--       </ul> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:32px 32px" id="contact">
-  <h2>Contact</h2>
-  <div style="margin-top:18px">
-    <p>
-    <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
-    Prof. Sasa Kresic-Juric, <tt>sea-eu.comp.math@pmfst.hr</tt>.<br/>
-    Department of Mathematics,
-    Faculty of Science,
-    University of Split.<br/>
-    Rudjera Boskovica 33.
-    21000 Split, Croatia.<br/>
-    </p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +385 21 619 228</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:  <a href="mailto:sea-eu.comp.math@pmfst.hr">sea-eu.comp.math@pmfst.hr</a></p>
-    <br>
-    <!-- Image of location/map -->
-    <img src="https://raw.githubusercontent.com/compmaths/cagliari2025/refs/heads/main/img/Cagliari.jpeg" 
-         alt="Split view" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-  <p class="w3-center w3-padding-16 w3-large"><i>See you in Cagliari!</i></p>
-
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-32">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p class="w3-padding-32 w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
-    All the images are licensed under <a href="https://commons.wikimedia.org/wiki/Category:CC-BY-SA-4.0">CC-BY-SA-4</a> license. All of them are &copy; J. Rafael Rodríguez Galván exepting <i>Vestibule</i> and <i>Sphinx</i> in <i>Diocletian's Palace</i>, which are derived from images by Goran Leš and Adam Jones (<a href="https://commons.wikimedia.org">Wikimedia</a>).
-    </p>
-
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
+<p><strong>University of Cagliari, Department of Mathematics and
+Computer Science</strong></p>
+<p>21-25 July 2025</p>
+<p><strong>Partner Institutes</strong></p>
+<p><strong>Hacettepe University, Department of Mathematics</strong></p>
+<p><strong>University of Cádiz</strong>, <strong>Department of
+Mathematics</strong></p>
+<p>Oriented to Bachelor, Master and Doctorate students</p>
+<p><img src="media/Cagliari.jpeg" style="width:5.84114in;height:4.11547in"
+alt="Overview" /></p>
+<h3 id="section"></h3>
+<h3 id="section-1"></h3>
+<h3 id="overview">Overview</h3>
+<p>In this program, an intensive <strong>5-day</strong>, 30-hour course
+which will be held at the University of Cagliari on "
+<strong>Theoretical and numerical analysis of differential equations and
+their applications</strong>" at the undergraduate and graduate levels
+will be offered, prepared by professors from the University of Cagliari
+and partner universities. This project aims to deepen the study of
+differential equations, both from a theoretical and numerical
+perspective, with particular attention to solving problems in scientific
+and engineering contexts as focusing on the analysis of differential
+equations applied to real-world models.</p>
+<p>Participants who complete the course will receive <strong>3
+ECTS</strong> credits.</p>
+<p><img src="media/image2.jpeg"
+style="width:6.53056in;height:4.89583in" /></p>
+<p>Courses</p>
+<p><em><strong>Course 1. General Introduction to Ordinary Differential
+Equations &amp; Applications to Real-World Models</strong></em></p>
+<p>- Some Types of Linear ODEs and Systems</p>
+<p>- Mathematical Modellings and Applications of linear ODEs and
+Systems</p>
+<p><em><strong>Organizers &amp; Speakers:</strong></em> Eylem
+Öztürk (Hacettepe University) &amp; Fatma Gamze Düzgün (University of
+Cagliari)</p>
+<p><em><strong>Classroom time:</strong> </em>12 hours
+(Monday-Tuesday)</p>
+<p><em><strong>Course 2. Some types of linear PDEs and Systems &amp;
+Numerical Methods for PDEs</strong></em></p>
+<p>- Some Types of Linear PDEs and Systems: Boundary Value Problems and
+Modelling</p>
+<p>- Galerkin Methods for PDEs: Analysis, Implementation and
+Applications</p>
+<p><em><strong>Organizer &amp; Speaker:</strong></em> Jose Rafael
+Rodríguez Galván (University of Cádiz)</p>
+<p><em><strong>Classroom time:</strong></em> 6 hours
+(Wednesday-Thursday)</p>
+<p><em><strong>Course 3. Mathematical Modelling and Applications of PDEs
+and Systems</strong></em></p>
+<p>- Introduction to Second Order PDEs</p>
+<p>- From Laplace’s Equation to Chemotaxis Systems</p>
+<p><em><strong>Organizer &amp; Speaker:</strong></em> Rafael Díaz
+Fuentes (University of Cagliari)</p>
+<p><em><strong>Classroom time:</strong></em> 6 hours
+(Wednesday-Thursday)</p>
+<p><em><strong>Last Day Content: Free work and exercise day of the
+topics of the week</strong></em></p>
+<p>-Mixed exercises/Homework control/Free quiz</p>
+<p><em><strong>Organizers &amp; Speakers:</strong></em> All
+Lecturers</p>
+<p><em><strong>Classroom time:</strong></em> 6 hours (Friday)</p>
+<h5 id="section-2"></h5>
+<h5 id="schedule-will-be-announced-later."><strong>Schedule</strong>
+will be announced later.</h5>
+<h5 id="online-introduction-days-will-be-announced-later."><em>Online
+Introduction Days</em> will be announced later.</h5>
+<p><strong>Organizers</strong></p>
+<p><strong>Giuseppe Viglialoro</strong> (University of Cagliari)</p>
+<p><strong>Fatma Gamze Düzgün</strong> (University of Cagliari)</p>
+<p><strong>Rafael Díaz Fuentes</strong> (University of Cagliari)</p>
+<p><strong>Jose Rafael Rodríguez Galván</strong> (University of
+Cádiz)</p>
+<p><strong>Eylem Öztürk</strong> (Hacettepe University)</p>
+<p><strong>Berke Kaleboğaz</strong> (Hacettepe University)</p>
+<p><strong>Contact:</strong></p>
+<p><strong>Giuseppe Viglialoro</strong> (Professor in Dept. of
+Mathematics and Computer Science, University of Cagliari)</p>
+<p><strong>Address:</strong> Palazzo delle Scienze, Via Ospedale, 72,
+09124 Cagliari, Italy</p>
+<p><strong>Email:</strong> <a
+href="mailto:giuseppe.viglialoro@unica.it">giuseppe.viglialoro@unica.it</a></p>
+<p><img src="media/image3.jpeg" style="width:6.53194in;height:1.37014in"
+alt="Immagine che contiene testo, Carattere, simbolo, logo Il contenuto generato dall&#39;IA potrebbe non essere corretto." /><img
+src="media/image4.png" style="width:6.53194in;height:2.32569in"
+alt="Immagine che contiene Blu elettrico, Carattere, Elementi grafici, logo Il contenuto generato dall&#39;IA potrebbe non essere corretto." /></p>
 </body>
 </html>
-
